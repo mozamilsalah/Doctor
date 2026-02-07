@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيادة الدكتور مصعب صلاح  ابعناية الصحية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* أنماط CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #2a7de1;
+            --secondary-color: #0b5aa8;
+            --accent-color: #e6f2ff;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+            --success-color: #28a745;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        body {
+            color: var(--text-color);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* رأس الصفحة */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-right: 25px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        
+        /* قسم البطل */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1516549655669-df8b9f6a4e5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            
+
+        }
+        /* أنماط CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #2a7de1;
+            --secondary-color: #0b5aa8;
+            --accent-color: #e6f2ff;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+            --success-color: #28a745;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        body {
+            color: var(--text-color);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* رأس الصفحة */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-right: 25px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        
+        /* قسم البطل */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1516549655669-df8b9f6a4e5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        /* الخدمات */
+        .services {
+            padding: 80px 0;
+            background-color: var(--light-color);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        /* حول الطبيب */
+        .about {
+            padding: 80px 0;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .doctor-info {
+            margin-top: 30px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .info-item i {
+            color: var(--primary-color);
+            margin-left: 15px;
+            font-size: 1.2rem;
+        }
+        
+        /* حجز موعد */
+        .appointment {
+            padding: 80px 0;
+            background-color: var(--accent-color);
+        }
+        
+        .appointment-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        You sent
+/* اتصل بنا */
+        .contact {
+            padding: 80px 0;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .contact-card {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        
+        /* تذييل الصفحة */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-column h4 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: white;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ddd;
+            font-size: 0.9rem;
+        }
+        
+        /* تجاوبية */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-img, .about-text {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                box-shadow: var(--shadow);
+                padding: 20px;
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero {
+                padding: 70px 0;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .services, .about, .appointment, .contact {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-stethoscope"></i>
+                <div class="logo-text">
+                    <h1>عيادة الدكتور مصعب صلاح</h1>
+                    <p>العناية الصحية الشاملة</p>
+                </div>
+            </div>
+            
+<button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainNav">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#about">عن الدكتور</a></li>
+                    <li><a href="#appointment">حجز موعد</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم البطل الرئيسي -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>رعاية طبية متميزة لصحة أفضل</h2>
+            <p>في عيادة الدكتور أحمد، نقدم رعاية صحية شاملة بمستوى عالي من الجودة والاحترافية. نهتم بصحتكم ونقدم التشخيص الدقيق والعلاج الفعال في جو مريح وودي.</p>
+            <a href="#appointment" class="btn">احجز موعدك الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>خدماتنا الطبية</h2>
+                <p>نقدم مجموعة متكاملة من الخدمات الطبية لتلبية احتياجاتكم الصحية</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>استشارات طبية</h3>
+                    <p>استشارات طبية شاملة مع تشخيص دقيق وخطط علاجية مخصصة لكل حالة.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>فحوصات دورية</h3>
+                    <p>فحوصات صحية منتظمة للكشف المبكر عن الأمراض والوقاية منها.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-pills"></i>
+                    <h3>وصفات علاجية</h3>
+                    <p>وصف الأدوية المناسبة مع متابعة الحالة لضمان فعالية العلاج.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عن الدكتور -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>عن الدكتور</h2>
+                <p>تعرف على خبرات وتخصصات الدكتور مصعب صلاح</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="musab.jpeg" alt="الدكتور أحمد">
+                </div>
+                
+                <div class="about-text">
+                    <h3>الدكتور مصعب صلاح</h3>
+                    <p>الدكتور مصعب صلاح محمد الطيب خريخ جامعة كسلا كلية الطب والعلوم الصحية</p>
+                    
+                    <div class="doctor-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>التخصص:</strong> الطب الباطني 
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <strong>الخبرة:</strong> مبتدئ في العمل
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            
+<i class="fas fa-language"></i>
+                            <div>
+                                <strong>اللغات:</strong> العربية، الإنجليزية
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم حجز المواعيد -->
+    <section class="appointment" id="appointment">
+        <div class="container">
+            <div class="section-title">
+                <h2>حجز موعد</h2>
+                <p>يمكنك حجز موعدك بسهولة عن طريق تعبئة النموذج التالي</p>
+            </div>
+            
+            <div class="appointment-form">
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">التاريخ المفضل</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">الوقت المفضل</label>
+                        <select id="time" required>
+                            <option value="">اختر الوقت</option>
+                            <option value="9:00-10:00">9:00 صباحاً - 10:00 صباحاً</option>
+                            <option value="10:00-11:00">10:00 صباحاً - 11:00 صباحاً</option>
+                            <option value="11:00-12:00">11:00 صباحاً - 12:00 ظهراً</option>
+                            <option value="13:00-14:00">1:00 ظهراً - 2:00 ظهراً</option>
+                            <option value="14:00-15:00">2:00 ظهراً - 3:00 عصراً</option>
+                            <option value="15:00-16:00">3:00 عصراً - 4:00 عصراً</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reason">سبب الزيارة (اختياري)</label>
+                        <textarea id="reason" placeholder="يرجى ذكر السبب الرئيسي للزيارة إذا أردت"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">تأكيد الحجز</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>اتصل بنا</h2>
+                <p>يمكنك التواصل معنا عبر الطرق التالية</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>العنوان</h4>
+                    <p>شارع الدكاترة<br>مدني</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>هاتف العيادة</h4>
+                    <p>0119986116</p>
+                    <p>الاستقبال: من 8 صباحاً إلى 8 مساءً</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    You sent
+<h4>ساعات العمل</h4>
+                    <p>الأحد - الخميس: 8 صباحاً - 8 مساءً</p>
+                    <p>الجمعة: 4 مساءً - 8 مساءً</p>
+                    <p>السبت: إجازة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>عيادة الدكتور مصعب صلاح</h4>
+                    <p>نقدم رعاية طبية متكاملة بمعايير عالمية، مع الاهتمام بتجربة المريض ورفاهيته.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="color: white; margin-left: 15px; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white; margin-left: 15px; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
+<a href="#" style="color: white; margin-left: 15px; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#about">عن الدكتور</a></li>
+                        <li><a href="#appointment">حجز موعد</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li><a href="#">استشارات طبية</a></li>
+                        <li><a href="#">فحوصات دورية</a></li>
+                        <li><a href="#">علاج الأمراض المزمنة</a></li>
+                        <li><a href="#">تطعيمات</a></li>
+                        <li><a href="#">استشارات تغذية</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة مزمل صلاح &copy </i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript للتحكم في القائمة المتنقلة والنموذج
+        document.addEventListener('DOMContentLoaded', function() {
+            // التحكم في القائمة المتنقلة
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mainNav = document.getElementById('mainNav');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mainNav.classList.toggle('show');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (mainNav.classList.contains('show')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            // إغلاق القائمة عند النقر على رابط
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mainNav.classList.remove('show');
+                    mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                    mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                });
+            });
+            
+            // معالجة نموذج الحجز
+            const appointmentForm = document.getElementById('appointmentForm');
+            appointmentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // جمع بيانات النموذج
+                const formData = {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    email: document.getElementById('email').value,
+                    date: document.getElementById('date').value,
+                    time: document.getElementById('time').value,
+                    reason: document.getElementById('reason').value
+                };
+                
+                // في التطبيق الحقيقي، هنا نرسل البيانات إلى الخادم
+                // لكننا سنعرض رسالة نجاح بسيطة لأغراض العرض
+                
+                // رسالة نجاح
+                alert(شكراً ${formData.name}! تم استلام طلب حجز الموعد بنجاح.\n\nسيتم التواصل معك على الرقم ${formData.phone} لتأكيد الموعد.);
+                
+                // إعادة تعيين النموذج
+                appointmentForm.reset()
+// التمرير إلى الأعلى
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+            
+            // تعيين تاريخ اليوم كأدنى تاريخ في حقل التاريخ
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('date').setAttribute('min', today);
+            
+            // التمرير السلس للروابط
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+                
+
+
